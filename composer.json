@@ -1,0 +1,33 @@
+{
+    "name": "iwedmak/url-auth",
+    "description": "Auth urls in laravel 5 by token with lifetime",
+    "keywords": ["laravel","illuminate","mail","auth","url","lifetime"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iWedmak Om",
+            "email": "iwedmak@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/database": "5.*",
+        "laravel/framework": "5.*",
+        "nesbot/carbon": "1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/commands"
+        ],
+        "psr-4": {
+            "iWedmak\\UrlAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iWedmak\\UrlAuth\\UrlAuthServiceProvider"
+            ]
+        }
+    }
+}
